@@ -1,0 +1,355 @@
+/* COLORS */
+/* #007d7b - aqua */
+/* #000000 - black */
+/* #ffffff - white */
+/* GLOBAL STYLES------------------------------------------- */
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+
+html{
+    background-color: black;
+    width: 485px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: white;
+    min-width:320px;
+    font-family: 'Ariel', 'Helvetica', sans-serif;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+nav a {
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 3.0em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* End of Global Styles ------------------------------------------------ */
+
+/* Start of Header----------------------------------------------------- */
+
+header{}
+
+header h1{
+    text-align: center;
+    color: #007d7b;
+    background-color: white;
+    text-transform:uppercase;
+}
+
+nav{
+    background-color: #000000;
+    font-weight: bolder;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav li{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+nav a{
+    display:flex;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    align-items:center;
+    text-align: center;
+}
+
+nav h2{
+    visibility: hidden;
+}
+
+[href="#top"] {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-radius:10px 0 0px 0px;
+  }
+
+/* End of Header----------------------------------------------------------- */
+
+/* About Section--------------------------- */
+
+.about h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom:10px;
+    font-weight: bold;
+}
+
+.about p{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+/* End of About Section ------------------------------------*/
+/* Start of Gallery------------------------------------ */
+.gallery h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom:10px;
+    font-weight: bold;
+}
+
+.gallery #gallery-intro p{
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+#gallery-pics{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-container{
+    position: relative;
+    padding-bottom: 15px;
+}
+
+img{
+    justify-content: center;
+    max-width: 100%;
+}
+
+.img-container p {
+  position: absolute;
+  bottom: 270px; /* Adjust this value to position the text where you want it */
+  left: 125px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+
+.img-container:first-child p{
+    bottom: 20px; /* Adjust this value to position the text where you want it */
+    left: 155px;
+  }
+
+.img-container:nth-child(3) p{
+    bottom: 20px;
+    left: 150px;
+}
+
+.img-container:nth-child(4) p{
+    bottom: 615px;
+    left: 155px;
+    color:black;
+}
+
+.img-container:nth-child(5) p{
+    bottom: 615px;
+    left: 160px;
+    color:black;
+}
+
+.img-container:nth-child(6) p{
+    bottom: 20px;
+    left: 160px;
+    color:black;
+}
+
+.img-container:nth-child(7) p{
+    bottom: 20px;
+
+}
+
+.img-container:nth-child(8) p{
+    color:black;
+    left: 100px;
+}
+
+.img-container:nth-child(9) p{
+    color:black;
+    left: 100px;
+}
+
+.img-container:nth-child(10) p{
+    color:black;
+    left: 150px;
+}
+
+.img-container:nth-child(11) p{
+    color:black;
+    left: 150px;
+}
+
+.img-container:nth-child(12) p{
+    left: 125px;
+}
+
+
+/* End of Gallery ============================================ */
+
+/* Start of Contact */
+
+.contact{
+    background-color: black;
+    color:white;
+}
+
+.contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom:10px;
+    font-weight: bold;
+}
+
+.contact p{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label{
+    text-transform: uppercase;
+    font-weight:bolder;
+    padding-left: 10px;
+}
+
+input{
+    margin-bottom: 20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    color:#007d7b;
+    text-transform: uppercase;
+    font-weight:bolder;
+}
+
+input:last-child{
+    width: 50%;
+    color:white;
+    background-color: #007d7b;
+    margin-left: 120px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+/* END OF CONTACT */
+footer{
+    background-color: #000000;
+    color:white;
+    text-align: center;
+    margin-bottom:20px;
+}
+/* End of Contact */
+
+@media screen and (min-width: 880px) {
+    html{
+        width:880px;
+    }
+
+    header h1{
+        text-align: left;
+    }
+
+    #gallery-pics{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .img-container:nth-child(3) {
+        bottom: 174px; 
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        position:relative;
+        left:100px;
+    }   
+
+    input{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    html{
+        width:1300px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: end;
+        padding-top: 15px;
+        font-weight: bolder;
+    }
+
+    #gallery-pics{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .img-container:nth-child(3) {
+        bottom: 0px; 
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        position:relative;
+        left:175px;
+    }   
+
+    input{
+        width: 75%;
+    }
+
+    input:last-child{
+        margin-left: 160px;
+
+    }   
+}
